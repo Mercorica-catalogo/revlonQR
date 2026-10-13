@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuento Exclusivo - Revlon & Almay</title>
+    <style>
+        :root {
+            --primary-bg: #000000;
+            --text-main: #ffffff;
+            --accent-color: #ff0d21;
+            --text-muted: #e0e0e0;
+            --coupon-bg: #ffffff;
+            --coupon-text: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .landing-container {
+            background-color: var(--primary-bg);
+            max-width: 500px;
+            width: 100%;
+            border: 1px solid #333;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+
+        /* Header Marcas */
+        .brand-header {
+            background-color: #ffffff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 2px solid #000;
+        }
+
+        .brand-logo {
+            font-weight: 800;
+            font-size: 24px;
+            letter-spacing: 2px;
+            color: #000000;
+            text-transform: uppercase;
+        }
+
+        .brand-revlon {
+            color: #d32f2f; /* Color representativo de Revlon */
+        }
+
+        /* Sección de Título */
+        .hero-section {
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 2px dashed #444;
+        }
+
+        .hero-title {
+            font-size: 36px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1.1;
+            margin-bottom: 10px;
+        }
+
+        .hero-highlight {
+            color: var(--accent-color);
+            font-size: 42px;
+            display: block;
+            margin-top: 5px;
+        }
+
+        /* Información de la Promo */
+        .promo-details {
+            padding: 25px 25px;
+            font-size: 15px;
+            line-height: 1.5;
+            color: var(--text-muted);
+        }
+
+        .promo-details strong {
+            color: #ffffff;
+        }
+
+        .promo-tag {
+            color: #ffffff;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        /* Contenedor de Imágenes split */
+        .image-split {
+            display: flex;
+            width: 100%;
+            position: relative;
+        }
+
+        .image-half {
+            width: 50%;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img-left {
+            /* Reemplazar con la URL de la imagen de la modelo de la izquierda */
+            background-color: #f3d1cc; 
+            background-image: linear-gradient(45deg, #f3d1cc 25%, #e8b0a7 100%);
+        }
+
+        .img-right {
+            /* Reemplazar con la URL de la imagen de la modelo de la derecha */
+            background-color: #dfb295;
+            background-image: linear-gradient(45deg, #dfb295 25%, #c59374 100%);
+        }
+
+        /* Código del Cupón Flotante */
+        .coupon-badge {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--coupon-bg);
+            color: var(--coupon-text);
+            padding: 10px 24px;
+            font-weight: 900;
+            font-size: 18px;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            text-align: center;
+            min-width: 200px;
+        }
+
+        /* Footer con Términos */
+        .footer-terms {
+            padding: 20px;
+            text-align: center;
+            font-size: 11px;
+            color: #888888;
+            border-top: 1px dashed #333;
+            background-color: #080808;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="landing-container">
+        <!-- Encabezado de marcas -->
+        <header class="brand-header">
+            <div class="brand-logo"><span class="brand-revlon">REVLON</span></div>
+            <div class="brand-logo">ALMAY</div>
+        </header>
+
+        <!-- Sección Principal / Descuento -->
+        <section class="hero-section">
+            <h1 class="hero-title">
+                Descuento<br>Exclusivo
+                <span class="hero-highlight">Hasta 40% Off</span>
+            </h1>
+        </section>
+
+        <!-- Detalles de la Promoción -->
+        <section class="promo-details">
+            <span class="promo-tag">¡Promoción de maquillaje!</span>
+            <p>Presenta este cupón en <strong>tienda Beauty</strong> (350m norte de Capris, La Uruca) y recibe un descuento en productos seleccionados Revlon y Almay.</p>
+        </section>
+
+        <!-- Área Visual e Identificador de Cupón -->
+        <section class="image-split">
+            <!-- Espacio reservado para las fotos de campaña -->
+            <div class="image-half img-left"></div>
+            <div class="image-half img-right"></div>
+            <div class="coupon-badge">
+                SINREGLAS2026
+            </div>
+        </section>
+
+        <!-- Términos y Condiciones -->
+        <footer class="footer-terms">
+            Aplican condiciones, promoción válida hasta el 31 de octubre de 2026.
+        </footer>
+    </div>
+
+</body>
+</html>
