@@ -43,12 +43,18 @@
         /* Header Marcas */
         .brand-header {
             background-color: #ffffff;
-            background-image: url("logos qr-8.png");
+        
             padding: 20px;
             display: flex;
             justify-content: space-around;
             align-items: center;
             border-bottom: 2px solid #000;
+        }
+
+        *logos {
+            background-image: url("logos qr-8.png");
+            background-repeat: no-repeat;
+            display:block;
         }
 
         .brand-logo {
@@ -165,6 +171,7 @@
     <div class="landing-container">
         <!-- Encabezado de marcas -->
         <header class="brand-header">
+            <div id="logos"></div>
             <!--  <div class="brand-logo"><span class="brand-revlon">REVLON</span></div>
             <div class="brand-logo">ALMAY</div>-->
         </header>
